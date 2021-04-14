@@ -68,6 +68,8 @@ export default new Vuex.Store({
       commit('setLoading')
       axios
         .get(
+          //https://jcmm.icu/Portafolio/ws/proyectos/getProyectos
+          //http://localhost:8084/Portafolio/ws/proyectos/getProyectos
           "https://jcmm.icu/Portafolio/ws/proyectos/getProyectos"
         )
         .then((response) => {

@@ -7,7 +7,16 @@
         style="height: 90vh"
         gradient="rgba(0,0,0,0.1), rgba(0,0,0,0.8)"
         :src="require('@/assets/principal.png')"
+        :lazy-src="require('@/assets/principalLow.png')"
       >
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            ></v-progress-circular>
+          </v-row>
+        </template>
         <v-row align="center" justify="start" class="ma-0 top-left">
           <v-col cols="12" class="pa-1">
             <div class="white--text">
@@ -30,6 +39,8 @@
       </v-img>
 
       <proyectCards class="mb-10" id="proyects"></proyectCards>
+
+      <downloadCV class="pb-10" id="cv"></downloadCV>
 
       <Contact class="pb-10" id="contact"></Contact>
     </v-main>
@@ -104,12 +115,28 @@
   font-weight: 600 !important;
 }
 
+.subtitlesSize {
+  font-size: 3.75rem !important;
+  font-weight: 300;
+  line-height: 3.75rem;
+  letter-spacing: -0.0083333333em !important;
+  font-family: "Roboto" !important;
+}
+
 @media only screen and (max-width: 600px) {
   .titulosSize {
     font-size: 24px !important;
     line-height: 0 !important;
     font-family: Poppins !important;
     font-weight: 300 !important;
+  }
+
+  .subtitlesSize {
+    font-size: 2.2rem !important;
+    font-weight: 300;
+    line-height: 2.5rem !important;
+    letter-spacing: -0.0083333333em !important;
+    font-family: "Roboto" !important;
   }
 }
 
@@ -129,12 +156,10 @@
 }
 
 h1 {
-  font-size: 5em;
-  color: white;
   text-transform: uppercase;
 }
 
-span {
+.blink {
   border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
 }
@@ -146,5 +171,4 @@ span {
 }
 </style>
 
-<script src="./js/home.js">
-</script>
+<script src="./js/home.js"></script>
