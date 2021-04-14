@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p class="black--text subtitlesSize text-center mt-10">
+  <div style="background-color: #EAE4E3">
+    <p class="black--text subtitlesSize text-center pt-10">
       Proyects and Colaborations
     </p>
     <v-container v-if="!loading">
@@ -15,7 +15,7 @@
             <v-card class="mx-auto" color="grey lighten-4" max-width="500">
               <v-img
                 :src="proyecto.urlImage"
-                lazy-src="https://jcmm.icu/images/loading.jpg"
+                :lazy-src="require('@/assets/loading.jpg')"
               >
                 <template v-slot:placeholder>
                   <v-row

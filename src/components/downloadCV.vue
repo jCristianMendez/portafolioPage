@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color: #EAE4E3">
     <p class="black--text subtitlesSize text-center pt-10 pb-10">
       Download my curriculum vitae
     </p>

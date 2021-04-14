@@ -38,11 +38,11 @@
         </v-row>
       </v-img>
 
-      <proyectCards class="mb-10" id="proyects"></proyectCards>
+      <proyectCards class="pb-10" id="proyects"></proyectCards>
 
       <downloadCV class="pb-10" id="cv"></downloadCV>
 
-      <Contact class="pb-10" id="contact"></Contact>
+      <Contact class="pb-15" id="contact"></Contact>
     </v-main>
 
     <div class="footer-login" style="background-color: rgba(74, 74, 74, 0.7)">
